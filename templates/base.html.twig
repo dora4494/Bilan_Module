@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <title>{% block title %}Bilan Module{% endblock %}</title>
+</head>
+<body>
+<header>
+    <div class="container_header">
+        <h2>Bilan Module</h2>
+    </div>
+</header>
+
+<main>
+    <div class="container_main1">
+        <div class="container_add_module">
+            <a href="{{ path('bilan_formulaire') }}" class="btn_formulaire">Ajouter un module</a>
+            <a href="{{ path('bilan_modules') }}" class="btn_accueil">Accueil</a>
+        </div>
+
+    </div>
+    <div class="container_main2">
+        {% block body %}{% endblock %}
+
+    </div>
+
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <h1>Modules évalués</h1>
+
+    <div class="container_liste">
+        {% for module in lstModules %}
+
+        <div class="module_item">
+        <a href="{{ path('bilan_detail', {'module' : module.id}) }}">
+        {{ module.intitule }}
+        </a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
