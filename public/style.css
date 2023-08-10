@@ -1,0 +1,132 @@
+/* Réinitialisation des marges et des rembourrages */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Utilisation d'une police moderne (remplace "NomDeLaPolice" par le nom réel de la police que tu souhaites utiliser) */
+body {
+    font-family: "NomDeLaPolice", sans-serif;
+}
+
+/* Arrière-plan bleu clair */
+body {
+    background-color: #f0f5fc;
+}
+
+/* En-tête avec fond bleu foncé et texte blanc */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Conteneur principal avec espacement */
+.container_main1 {
+    margin-top: 45px;
+    margin-left: 10px;
+
+
+}
+
+
+
+/* Conteneur principal avec espacement */
+.container_main2 {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Liens de navigation dans l'en-tête */
+.lien_formulaire a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Style de titre principal */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style des paragraphes */
+p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style des liens */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Formulaire centré avec espacement entre les champs */
+.container-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Espacement entre les champs du formulaire */
+.container-form input[type="text"],
+.container-form input[type="number"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style du bouton du formulaire */
+.container-form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.container-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Positionnement des boutons */
+.container_add_module {
+    text-align: left;
+    margin-top: -30px; /* Ajuste cette marge selon tes préférences */
+}
+
+/* Style des boutons */
+.btn_accueil,
+.btn_formulaire {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px; /* Espacement entre les boutons */
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+
+/* Affichage en colonne des modules */
+.module_item {
+    margin-bottom: 10px; /* Espacement entre les modules */
+}
