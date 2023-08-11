@@ -4,10 +4,34 @@
     <h1>Avis module</h1>
     <div class="container_details">
 
-    <p>Intitulé : {{module.intitule}}</p>
-        <p>Formateur-trice : {{module.formateur}}</p>
-            <p>Note : {{module.note}}</p>
-                 <p>Appréciation : {{module.appreciation}}</p>
+        <div class="field">
+            <label for="intitule">Intitulé :</label>
+            <div class="input-box">
+                <p>{{module.intitule}}</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="note">Note :</label>
+            <div class="input-box">
+                <p class="star-rating">
+                    {% for i in 1..5 %}
+                        {% if i <= module.note %}
+                            <span class="star filled"></span>
+                        {% else %}
+                            <span class="star"></span>
+                        {% endif %}
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="appreciation">Appréciation :</label>
+            <div class="input-box-large">
+                <p>{{module.appreciation}}</p>
+            </div>
+        </div>
 
     </div>
 {% endblock %}
@@ -15,4 +39,3 @@
 {% block title %}
 
 {% endblock %}
-
